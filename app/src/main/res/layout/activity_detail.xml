@@ -27,14 +27,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView4" />
 
-    <Button
-        android:text="BACK"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:textSize="36sp" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -55,4 +47,15 @@
                 android:textSize="@dimen/h2" />
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:text="BACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickback"
+        android:id="@+id/button"
+        android:textSize="36sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
