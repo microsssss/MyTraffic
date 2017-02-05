@@ -6,4 +6,5 @@
 
     <dimen name="h1">100sp</dimen>
     <dimen name="h2">50sp</dimen>
+    <dimen name="my_margin">80dp</dimen>
 </resources>
