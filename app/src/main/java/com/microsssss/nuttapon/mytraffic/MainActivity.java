@@ -1,7 +1,10 @@
 package com.microsssss.nuttapon.mytraffic;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
         // Create Listview
         MyAdapter myAdapter=new MyAdapter(MainActivity.this, ints, titleStrings, shortdetailStrings);
         listView.setAdapter(myAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(MainActivity.this,Detail.class);
+                intent.putExtra("Title", titleStrings[position]);
+                intent.putExtra("Detail", detailStrings[position]);
+                intent.putExtra("Image", ints[position]);
+                startActivity(intent);
+
+            }
+        });   //  เป้นการจับการ Click เพื่อส่งค่า
 
 
 
