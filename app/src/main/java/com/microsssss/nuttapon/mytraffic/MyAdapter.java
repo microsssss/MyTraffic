@@ -42,11 +42,11 @@ public class MyAdapter extends BaseAdapter{   // สืบทอด Class ให
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
 
         //  สร้าง layout เสมือน
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE); // เปิด Service Layout
-        View view = layoutInflater.inflate(R.layout.my_listview, parent, false);
+        View view = layoutInflater.inflate(R.layout.my_listview, viewGroup, false);
 
 
         //Initial View  การผูก object รูปภาพ

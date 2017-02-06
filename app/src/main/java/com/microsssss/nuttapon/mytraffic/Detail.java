@@ -18,7 +18,7 @@ public class Detail extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.imageView2);
         imageView.setImageResource(getIntent().getIntExtra("Image", R.drawable.traffic_01));
 
-        TextView detailTextview=(TextView) findViewById(R.id.textView4);
+        TextView detailTextview=(TextView) findViewById(R.id.textView5);
         detailTextview.setText(getIntent().getStringExtra("Detail"));
 
     }  // Main Method
